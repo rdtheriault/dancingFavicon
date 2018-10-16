@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <link id="link" rel="shortcut icon" href="favicon2.ico">   
+    </head>    
+    <body>
+    <h1>Coming Soon</h1>
+    
+    <script>
+        var favicon = document.getElementById("link");
+        var pic = 0;
+        function setFavicon(){
+            if(pic === 0){
+              favicon.href = "favicon1.ico";
+              pic = 1;
+            }
+            else if(pic === 1){
+              favicon.href = "favicon2.ico";
+              pic = 2;  
+            }
+            else if(pic === 2){
+              favicon.href = "favicon3.ico";
+              pic = 3;  
+            }
+            else if(pic === 3){
+              favicon.href = "favicon4.ico";
+              pic = 4;  
+            }
+            else if(pic === 4){
+              favicon.href = "favicon5.ico";
+              pic = 5;  
+            }
+            else if(pic === 5){
+              favicon.href = "favicon6.ico";
+              pic = 6;  
+            }
+            else if(pic === 6){
+              favicon.href = "favicon7.ico";
+              pic = 7;  
+            }
+            else if(pic === 7){
+              favicon.href = "favicon8.ico";
+              pic = 0;  
+            }
+        }
+        setInterval(setFavicon, 150);
+    </script>
+    
+    </body>
+</html>
